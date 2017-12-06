@@ -1,0 +1,6 @@
+framework module Pods_Frelocate {
+  umbrella header "Pods-Frelocate-umbrella.h"
+
+  export *
+  module * { export * }
+}
