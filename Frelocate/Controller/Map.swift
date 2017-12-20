@@ -11,5 +11,6 @@ import Foundation
 class Map: UIViewController {
     override func viewDidLoad() {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
     }
 }
