@@ -18,10 +18,10 @@ class SignIn: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard FIRAuth.auth()?.currentUser != nil else {
-            self.performSegue(withIdentifier: "signInComplete", sender: nil)
-            return
-        }
+//        guard FIRAuth.auth()?.currentUser != nil else {
+//            self.performSegue(withIdentifier: "signInComplete", sender: nil)
+//            return
+//        }
         
         self.emailField.delegate = self
         self.passwordField.delegate = self
@@ -51,6 +51,7 @@ class SignIn: UIViewController, UITextFieldDelegate {
                 print("ROB: Successfully uthenticated with Facebook")
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 self.firebaseAuth(credential)
+                self.performSegue(withIdentifier: "signInComplete", sender: nil)
             }
         }
         
