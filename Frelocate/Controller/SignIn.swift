@@ -18,14 +18,15 @@ class SignIn: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard FIRAuth.auth()?.currentUser != nil else {
-            self.performSegue(withIdentifier: "signInComplete", sender: nil)
-            return
-        }
-        
         self.emailField.delegate = self
         self.passwordField.delegate = self
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "signInComplete", sender: nil)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -38,23 +39,23 @@ class SignIn: UIViewController, UITextFieldDelegate {
         return (true)
     }
 
-    @IBAction func facebookBtnTapped(_ sender: AnyObject) {
-        
-        let facebookLogin = FBSDKLoginManager()
-        
-        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
-            if error != nil {
-                print("ROB: Unable to authenticate with Facebook - \(String(describing: error))")
-            } else if result?.isCancelled == true {
-                print("ROB: User cancelled Facebook Authentication")
-            } else {
-                print("ROB: Successfully uthenticated with Facebook")
-                let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-                self.firebaseAuth(credential)
-            }
-        }
-        
-    }
+//    @IBAction func facebookBtnTapped(_ sender: AnyObject) {
+//
+//        let facebookLogin = FBSDKLoginManager()
+//
+//        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
+//            if error != nil {
+//                print("ROB: Unable to authenticate with Facebook - \(String(describing: error))")
+//            } else if result?.isCancelled == true {
+//                print("ROB: User cancelled Facebook Authentication")
+//            } else {
+//                print("ROB: Successfully uthenticated with Facebook")
+//                let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+//                self.firebaseAuth(credential)
+//            }
+//        }
+//
+//    }
     
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in

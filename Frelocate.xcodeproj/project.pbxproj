@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		42F3F89528ABE35BF3421FD1 /* Pods_Frelocate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6C857833EE46AC3C702BC6 /* Pods_Frelocate.framework */; };
+		5922AF751FFC38E400C23753 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922AF741FFC38E400C23753 /* DataService.swift */; };
 		5924D7281FCF07A60086CBA1 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D7271FCF07A60086CBA1 /* SignUp.swift */; };
 		5924D72D1FD404D90086CBA1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D72C1FD404D90086CBA1 /* AuthService.swift */; };
 		5924D7341FD5F7C60086CBA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D7331FD5F7C60086CBA1 /* Constants.swift */; };
+		5927CA761FEEE1BF00A20CF4 /* ForgottenPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5927CA751FEEE1BF00A20CF4 /* ForgottenPassword.swift */; };
+		5927CA781FEEE50900A20CF4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5927CA771FEEE50900A20CF4 /* ShadowView.swift */; };
+		5927CA7A1FEEEA5300A20CF4 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5927CA791FEEEA5300A20CF4 /* PostCell.swift */; };
+		5927CA7D1FEEF15A00A20CF4 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5927CA7B1FEEF15A00A20CF4 /* KeychainWrapper.swift */; };
+		5927CA7F1FEEF17B00A20CF4 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5927CA7E1FEEF17B00A20CF4 /* KeychainItemAccessibility.swift */; };
 		594104291FC2459600A49C79 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594104281FC2459600A49C79 /* SWRevealViewController.m */; };
 		5941042C1FC246EE00A49C79 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5941042B1FC246EE00A49C79 /* MainViewController.swift */; };
 		5941042E1FC24BE500A49C79 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5941042D1FC24BE500A49C79 /* BackTableVC.swift */; };
@@ -18,7 +24,6 @@
 		594104321FC3690F00A49C79 /* SearchProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594104311FC3690F00A49C79 /* SearchProperties.swift */; };
 		594104341FC3691C00A49C79 /* SellMyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594104331FC3691C00A49C79 /* SellMyProperty.swift */; };
 		594104361FC4EABD00A49C79 /* AccountSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594104351FC4EABD00A49C79 /* AccountSettings.swift */; };
-		594104381FC4EAC800A49C79 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594104371FC4EAC800A49C79 /* Map.swift */; };
 		595148C11FC7764A00D050CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 595148C01FC7764A00D050CB /* GoogleService-Info.plist */; };
 		595148CC1FC78A4600D050CB /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595148CB1FC78A4500D050CB /* SignIn.swift */; };
 		595148CE1FC9BC7900D050CB /* SavingsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595148CD1FC9BC7900D050CB /* SavingsCalculator.swift */; };
@@ -34,9 +39,15 @@
 
 /* Begin PBXFileReference section */
 		29AF3BD11EFE92AB46294B45 /* Pods-Frelocate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frelocate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frelocate/Pods-Frelocate.debug.xcconfig"; sourceTree = "<group>"; };
+		5922AF741FFC38E400C23753 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		5924D7271FCF07A60086CBA1 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		5924D72C1FD404D90086CBA1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5924D7331FD5F7C60086CBA1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5927CA751FEEE1BF00A20CF4 /* ForgottenPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPassword.swift; sourceTree = "<group>"; };
+		5927CA771FEEE50900A20CF4 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		5927CA791FEEEA5300A20CF4 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		5927CA7B1FEEF15A00A20CF4 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		5927CA7E1FEEF17B00A20CF4 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		594104261FC2459500A49C79 /* Frelocate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Frelocate-Bridging-Header.h"; sourceTree = "<group>"; };
 		594104271FC2459500A49C79 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		594104281FC2459600A49C79 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -46,7 +57,6 @@
 		594104311FC3690F00A49C79 /* SearchProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProperties.swift; sourceTree = "<group>"; };
 		594104331FC3691C00A49C79 /* SellMyProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellMyProperty.swift; sourceTree = "<group>"; };
 		594104351FC4EABD00A49C79 /* AccountSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettings.swift; sourceTree = "<group>"; };
-		594104371FC4EAC800A49C79 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		595148C01FC7764A00D050CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		595148CB1FC78A4500D050CB /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignIn.swift; path = "/Users/robprior/Desktop/XCODE PROJECTS/Frelocate/Frelocate/Controller/SignIn.swift"; sourceTree = "<absolute>"; };
 		595148CD1FC9BC7900D050CB /* SavingsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsCalculator.swift; sourceTree = "<group>"; };
@@ -83,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				5924D72C1FD404D90086CBA1 /* AuthService.swift */,
+				5922AF741FFC38E400C23753 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -115,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				595148CF1FCCA8AC00D050CB /* RoundBtn.swift */,
+				5927CA771FEEE50900A20CF4 /* ShadowView.swift */,
+				5927CA791FEEEA5300A20CF4 /* PostCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,10 +141,10 @@
 				594104311FC3690F00A49C79 /* SearchProperties.swift */,
 				594104331FC3691C00A49C79 /* SellMyProperty.swift */,
 				594104351FC4EABD00A49C79 /* AccountSettings.swift */,
-				594104371FC4EAC800A49C79 /* Map.swift */,
 				5941042F1FC3687F00A49C79 /* MySavedProperties.swift */,
 				5941042D1FC24BE500A49C79 /* BackTableVC.swift */,
 				595148CD1FC9BC7900D050CB /* SavingsCalculator.swift */,
+				5927CA751FEEE1BF00A20CF4 /* ForgottenPassword.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +184,8 @@
 				594104271FC2459500A49C79 /* SWRevealViewController.h */,
 				594104281FC2459600A49C79 /* SWRevealViewController.m */,
 				594104261FC2459500A49C79 /* Frelocate-Bridging-Header.h */,
+				5927CA7B1FEEF15A00A20CF4 /* KeychainWrapper.swift */,
+				5927CA7E1FEEF17B00A20CF4 /* KeychainItemAccessibility.swift */,
 			);
 			path = Frelocate;
 			sourceTree = "<group>";
@@ -316,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				594104381FC4EAC800A49C79 /* Map.swift in Sources */,
+				5927CA7A1FEEEA5300A20CF4 /* PostCell.swift in Sources */,
 				5924D7341FD5F7C60086CBA1 /* Constants.swift in Sources */,
 				594104321FC3690F00A49C79 /* SearchProperties.swift in Sources */,
 				595148CE1FC9BC7900D050CB /* SavingsCalculator.swift in Sources */,
@@ -325,12 +340,17 @@
 				5941042E1FC24BE500A49C79 /* BackTableVC.swift in Sources */,
 				5924D7281FCF07A60086CBA1 /* SignUp.swift in Sources */,
 				598A02DE1FA7C63500BDEA6E /* AppDelegate.swift in Sources */,
+				5927CA7D1FEEF15A00A20CF4 /* KeychainWrapper.swift in Sources */,
 				594104361FC4EABD00A49C79 /* AccountSettings.swift in Sources */,
 				594104291FC2459600A49C79 /* SWRevealViewController.m in Sources */,
 				595148D01FCCA8AC00D050CB /* RoundBtn.swift in Sources */,
 				594104301FC3687F00A49C79 /* MySavedProperties.swift in Sources */,
+				5927CA761FEEE1BF00A20CF4 /* ForgottenPassword.swift in Sources */,
 				5941042C1FC246EE00A49C79 /* MainViewController.swift in Sources */,
+				5927CA7F1FEEF17B00A20CF4 /* KeychainItemAccessibility.swift in Sources */,
+				5927CA781FEEE50900A20CF4 /* ShadowView.swift in Sources */,
 				5924D72D1FD404D90086CBA1 /* AuthService.swift in Sources */,
+				5922AF751FFC38E400C23753 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

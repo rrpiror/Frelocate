@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,54 +19,58 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house2" translatesAutoresizingMaskIntoConstraints="NO" id="Dyi-gW-9VY">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house9" translatesAutoresizingMaskIntoConstraints="NO" id="Dyi-gW-9VY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U75-Ma-UfZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
-                                    <stackView opaque="NO" tag="20" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FxM-Ac-LNt">
-                                        <rect key="frame" x="43" y="283" width="289.5" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="I87-PK-Ekp">
+                                        <rect key="frame" x="36" y="356" width="304" height="100"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frelocate Logo" translatesAutoresizingMaskIntoConstraints="NO" id="1WQ-Lg-oak">
-                                                <rect key="frame" x="0.0" y="12.5" width="75" height="75"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-CL-DIv">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="75" id="5iV-nd-RKW"/>
-                                                    <constraint firstAttribute="height" constant="75" id="jSO-FV-gg9"/>
+                                                    <constraint firstAttribute="width" constant="100" id="Nbw-QZ-Jzk"/>
+                                                    <constraint firstAttribute="height" constant="100" id="slH-fz-HPH"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRELOCATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-cv-KLw">
-                                                <rect key="frame" x="75" y="29.5" width="214.5" height="41.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frelocate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-wm-hc1">
+                                                <rect key="frame" x="120" y="21" width="184" height="58"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="189.5" id="0ba-f5-tDL"/>
-                                                    <constraint firstAttribute="height" constant="41.5" id="Pam-EO-eLu"/>
+                                                    <constraint firstAttribute="width" constant="184" id="DCG-kq-hcZ"/>
+                                                    <constraint firstAttribute="height" constant="58" id="LlC-oE-xf3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="32"/>
-                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="45"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="289.5" id="3RU-Y3-avZ"/>
-                                            <constraint firstAttribute="height" constant="100" id="Tns-8c-gIE"/>
+                                            <constraint firstAttribute="width" constant="304" id="VnY-H8-DOh"/>
+                                            <constraint firstAttribute="trailing" secondItem="5WY-wm-hc1" secondAttribute="trailing" id="YXh-ZT-fmV"/>
+                                            <constraint firstItem="aOs-CL-DIv" firstAttribute="top" secondItem="I87-PK-Ekp" secondAttribute="top" id="YjH-4s-StM"/>
+                                            <constraint firstItem="5WY-wm-hc1" firstAttribute="top" secondItem="I87-PK-Ekp" secondAttribute="top" constant="21" id="bYx-nc-l92"/>
+                                            <constraint firstItem="aOs-CL-DIv" firstAttribute="leading" secondItem="I87-PK-Ekp" secondAttribute="leading" id="lQ5-5x-Cnj"/>
+                                            <constraint firstAttribute="height" constant="100" id="rlP-Fd-23g"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.24139732119999999" green="0.23746716979999999" blue="0.2371952236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46146982910000001" green="0.7635595798" blue="0.17072066659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="FxM-Ac-LNt" firstAttribute="centerX" secondItem="U75-Ma-UfZ" secondAttribute="centerX" id="NSC-rK-uTo"/>
-                                    <constraint firstItem="FxM-Ac-LNt" firstAttribute="centerY" secondItem="U75-Ma-UfZ" secondAttribute="centerY" id="kpw-FR-FbK"/>
+                                    <constraint firstItem="I87-PK-Ekp" firstAttribute="centerX" secondItem="U75-Ma-UfZ" secondAttribute="centerX" id="hFx-g7-lbN"/>
+                                    <constraint firstItem="I87-PK-Ekp" firstAttribute="centerY" secondItem="U75-Ma-UfZ" secondAttribute="centerY" id="wPc-qS-GvD"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="U75-Ma-UfZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7YV-5z-TK5"/>
-                            <constraint firstItem="U75-Ma-UfZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7y2-sF-Afk"/>
+                            <constraint firstItem="U75-Ma-UfZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="7y2-sF-Afk"/>
                             <constraint firstItem="Dyi-gW-9VY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BPt-XS-HcE"/>
-                            <constraint firstItem="Dyi-gW-9VY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MoD-vG-yA1"/>
+                            <constraint firstItem="Dyi-gW-9VY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="MoD-vG-yA1"/>
                             <constraint firstItem="U75-Ma-UfZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SNw-oq-IYB"/>
                             <constraint firstItem="Dyi-gW-9VY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uy3-9h-sJV"/>
                             <constraint firstItem="U75-Ma-UfZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jck-xU-Okb"/>
@@ -77,11 +81,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Frelocate Logo" width="353" height="399"/>
-        <image name="house2" width="1280" height="986"/>
+        <image name="NewLogo" width="377" height="396"/>
+        <image name="house9" width="400" height="257"/>
     </resources>
 </document>

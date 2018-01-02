@@ -30,6 +30,8 @@ class AuthService {
                             self.handleFirebaseErrors(error: error! as NSError, onComplete: onComplete)
                         } else {
                             onComplete(nil, user)
+                            let userData = ["provider": user?.providerID]
+                            self.completeSignIn(id: (user?.uid)!, userData: userData as! Dictionary<String, String>)
                         }
                     })
                 }
@@ -43,6 +45,8 @@ class AuthService {
                 self.handleFirebaseErrors(error: error! as NSError, onComplete: onComplete)
             } else {
                 onComplete(nil, user)
+                let userData = ["provider": user?.providerID]
+                self.completeSignIn(id: (user?.uid)!, userData: userData as! Dictionary<String, String>)
             }
         })
         
@@ -74,6 +78,12 @@ class AuthService {
         
         
         
+    }
+    
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("ROB: Data saved to keychain \(keychainResult)")
     }
     
 }
