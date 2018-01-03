@@ -18,6 +18,10 @@ class SearchProperties: UIViewController,UITableViewDelegate, UITableViewDataSou
         tableView.delegate = self
         tableView.dataSource = self
         
+        DataService.ds.REF_POSTS.observe(.value) { (snapshot) in
+            print(snapshot.value as Any)
+        }
+        
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
