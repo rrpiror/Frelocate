@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		42F3F89528ABE35BF3421FD1 /* Pods_Frelocate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6C857833EE46AC3C702BC6 /* Pods_Frelocate.framework */; };
 		5922AF751FFC38E400C23753 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922AF741FFC38E400C23753 /* DataService.swift */; };
+		5922AF771FFD63BF00C23753 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922AF761FFD63BF00C23753 /* Post.swift */; };
 		5924D7281FCF07A60086CBA1 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D7271FCF07A60086CBA1 /* SignUp.swift */; };
 		5924D72D1FD404D90086CBA1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D72C1FD404D90086CBA1 /* AuthService.swift */; };
 		5924D7341FD5F7C60086CBA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D7331FD5F7C60086CBA1 /* Constants.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		29AF3BD11EFE92AB46294B45 /* Pods-Frelocate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frelocate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frelocate/Pods-Frelocate.debug.xcconfig"; sourceTree = "<group>"; };
 		5922AF741FFC38E400C23753 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5922AF761FFD63BF00C23753 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5924D7271FCF07A60086CBA1 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		5924D72C1FD404D90086CBA1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5924D7331FD5F7C60086CBA1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		595148C21FC7787900D050CB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5922AF761FFD63BF00C23753 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				5927CA7D1FEEF15A00A20CF4 /* KeychainWrapper.swift in Sources */,
 				594104361FC4EABD00A49C79 /* AccountSettings.swift in Sources */,
 				594104291FC2459600A49C79 /* SWRevealViewController.m in Sources */,
+				5922AF771FFD63BF00C23753 /* Post.swift in Sources */,
 				595148D01FCCA8AC00D050CB /* RoundBtn.swift in Sources */,
 				594104301FC3687F00A49C79 /* MySavedProperties.swift in Sources */,
 				5927CA761FEEE1BF00A20CF4 /* ForgottenPassword.swift in Sources */,
