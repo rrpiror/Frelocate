@@ -939,6 +939,12 @@
                                                 <constraint firstItem="clf-8g-Wd2" firstAttribute="leading" secondItem="K5p-7j-cBc" secondAttribute="leadingMargin" id="s9S-4H-Wy7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="sVU-gM-Jm3" id="NrH-5K-qbr"/>
+                                            <outlet property="locationLabel" destination="clf-8g-Wd2" id="VJl-P0-EK8"/>
+                                            <outlet property="postImage" destination="nDd-wz-PG2" id="Vlj-UO-dA6"/>
+                                            <outlet property="valueLabel" destination="2PE-HQ-NFe" id="Bcc-fE-wCH"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="299" id="42S-mR-DwG" customClass="PostCell" customModule="Frelocate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="335" width="375" height="299"/>
