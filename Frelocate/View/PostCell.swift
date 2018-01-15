@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 class PostCell: UITableViewCell {
     
@@ -28,11 +29,32 @@ class PostCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(post: Post) {
+    func configureCell(post: Post, img: UIImage? = nil) {
         self.post = post
         self.descriptionLabel.text = post.description
         self.valueLabel.text = post.value
         self.locationLabel.text = post.location
-    }
+        
+        if img != nil {
+            self.postImage.image = img
+        } else {
     
+            let ref = FIRStorage.storage().reference(forURL: post.imageUrl)
+            ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
+                if error != nil {
+                    print("ROB: Unable to download image from firebase storage")
+                } else {
+                    print("ROB: Image downloaded from firebase storage")
+                    if let imageData = data {
+                        if let img = UIImage(data: imageData) {
+                            self.postImage.image = img
+                            SearchProperties.imageCache.setObject(img, forKey: post.imageUrl as NSString)
+                        }
+                    }
+                }
+            })
+        }
+    }
 }
+    
+

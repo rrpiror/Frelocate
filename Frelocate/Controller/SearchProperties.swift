@@ -14,6 +14,7 @@ class SearchProperties: UIViewController,UITableViewDelegate, UITableViewDataSou
     @IBOutlet var tableView: UITableView!
     
     var posts = [Post]()
+    static var imageCache = NSCache<NSString, UIImage>()
     
     override func viewDidLoad() {
     
@@ -50,8 +51,14 @@ class SearchProperties: UIViewController,UITableViewDelegate, UITableViewDataSou
         let post = posts[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
-            cell.configureCell(post: post)
-            return cell
+            
+            if let img = SearchProperties.imageCache.object(forKey: post.imageUrl as NSString) {
+                cell.configureCell(post: post, img: img)
+                return cell
+            } else {
+                cell.configureCell(post: post)
+                return cell
+            }
         } else {
             return PostCell()
         }

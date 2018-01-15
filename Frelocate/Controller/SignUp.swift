@@ -22,6 +22,7 @@ class SignUp: UIViewController, UITextFieldDelegate {
         
         self.emailField.delegate = self
         self.passwordField.delegate = self
+        self.numbersTextField.delegate = self
         
         }
     
@@ -32,6 +33,7 @@ class SignUp: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
+        numbersTextField.resignFirstResponder()
         return (true)
     }
 

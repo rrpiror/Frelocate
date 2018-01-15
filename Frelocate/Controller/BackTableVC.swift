@@ -26,7 +26,7 @@ class BackTableVC: UITableViewController {
         
         cell.textLabel?.text = TableArray[indexPath.row]
         
-        cell.textLabel?.textColor = UIColor.groupTableViewBackground
+        cell.textLabel?.textColor = UIColor.darkGray
         
         return cell
     }

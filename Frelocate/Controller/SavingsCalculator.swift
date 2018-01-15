@@ -49,7 +49,8 @@ class SavingsCalculator: UIViewController {
         
         let savingInt = Int(roundedSavingValue)
         
-        savingLbl.text = "£\(savingInt)"
+        let lessCosts = savingInt - 100
+        savingLbl.text = "£\(lessCosts)"
         
     }
 
