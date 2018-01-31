@@ -13,7 +13,7 @@ class PostCell: UITableViewCell {
     
     @IBOutlet var postImage: UIImageView!
     @IBOutlet var valueLabel: UILabel!
-    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var locationLabel: UILabel!
     
     var post: Post!
@@ -31,9 +31,9 @@ class PostCell: UITableViewCell {
     
     func configureCell(post: Post, img: UIImage? = nil) {
         self.post = post
-        self.descriptionLabel.text = post.description
+        self.titleLabel.text = post.title
         self.valueLabel.text = post.value
-        self.locationLabel.text = post.location
+        self.locationLabel.text = "\(post.street), \(post.location)"
         
         if img != nil {
             self.postImage.image = img

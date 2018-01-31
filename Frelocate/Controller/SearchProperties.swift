@@ -13,6 +13,8 @@ class SearchProperties: UIViewController,UITableViewDelegate, UITableViewDataSou
     
     @IBOutlet var tableView: UITableView!
     
+    var post: Post!
+    
     var posts = [Post]()
     static var imageCache = NSCache<NSString, UIImage>()
     
@@ -63,5 +65,18 @@ class SearchProperties: UIViewController,UITableViewDelegate, UITableViewDataSou
             return PostCell()
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "propertyAdvert" {
+            let destination = segue.destination as! propertyAdvert
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                destination.post = self.posts[indexPath.row]
+            }
+        }
+    }
+    
+    
+   
+    
     
 }

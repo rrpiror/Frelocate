@@ -72,21 +72,24 @@ class SignIn: UIViewController, UITextFieldDelegate {
         if let email = emailField.text, let pass = passwordField.text, (email.count > 0 && pass.count > 0) {
             AuthService.instance.signIn(email: email, password: pass, onComplete: { (errMsg, data) in
                 guard errMsg == nil else {
-                    let alert = UIAlertController(title: "Error signing up", message: errMsg, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
+                    self.createAlert(title: "Error signing up", message: errMsg!)
                     return
                 }
                 self.dismiss(animated: true, completion: nil)
                 self.performSegue(withIdentifier: "signInComplete", sender: nil)
             })
         } else {
-            let alert = UIAlertController(title: "Email and password required", message: "Please enter both a username and password", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-            present(alert, animated: true, completion: nil)
+            createAlert(title: "Email and password required", message: "Please enter both an email and a password")
         }
-
     }
+    
+    func createAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        return
+    }
+    
 }
 
     

@@ -43,41 +43,33 @@ class SignUp: UIViewController, UITextFieldDelegate {
             
             AuthService.instance.signUp(email: email, password: pass, onComplete: { (errMsg, data) in
                 guard errMsg == nil else {
-                    let alert = UIAlertController(title: "Error signing up", message: errMsg, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
+                    self.createAlert(title: "Error signing up", message: errMsg!)
                     return
                 }
                 self.performSegue(withIdentifier: "signUpComplete", sender: nil)
                 //self.dismiss(animated: true, completion: nil)
-                
             })
                 
             } else {
-                
-                let alert = UIAlertController(title: "Invalid Verification", message: "Please enter the correct verification numbers to confirm you are not a robot", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-                
-                self.randomNumber()
-                
-            }
-                
+                createAlert(title: "Invalid Verification", message: "Please enter the correct verification numbers to confirm you are not a robot")
+                randomNumber()
+                }
             } else {
-            
-            
-            let alert = UIAlertController(title: "Email and password required", message: "Please enter both a username and password", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            
-        }
-        
+            createAlert(title: "Email and password required", message: "Please enter both a username and password")
+            }
         }
     
     func randomNumber() {
         let randomNumber = arc4random_uniform(1001) + 1000
         numbersLabel.text = String(randomNumber)
     }
+    
+    func createAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        return
+        }
 
     }
 

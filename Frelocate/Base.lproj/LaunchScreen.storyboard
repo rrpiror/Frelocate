@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="I87-PK-Ekp">
-                                        <rect key="frame" x="36" y="356" width="304" height="100"/>
+                                        <rect key="frame" x="36" y="250" width="304" height="100"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-CL-DIv">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -61,8 +61,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.46146982910000001" green="0.7635595798" blue="0.17072066659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="I87-PK-Ekp" firstAttribute="top" secondItem="U75-Ma-UfZ" secondAttribute="top" constant="250" id="EVO-wf-K4V"/>
                                     <constraint firstItem="I87-PK-Ekp" firstAttribute="centerX" secondItem="U75-Ma-UfZ" secondAttribute="centerX" id="hFx-g7-lbN"/>
-                                    <constraint firstItem="I87-PK-Ekp" firstAttribute="centerY" secondItem="U75-Ma-UfZ" secondAttribute="centerY" id="wPc-qS-GvD"/>
                                 </constraints>
                             </view>
                         </subviews>

@@ -7,13 +7,14 @@
 //
 
 import Foundation
-import FirebaseAuth
+import Firebase
 
 class AccountSettings: UIViewController {
     
+    
     @IBOutlet var usernameLabel: UILabel!
     @IBOutlet var profilePicture: UIImageView!
-    
+
     
     override func viewDidLoad() {
         
@@ -23,6 +24,7 @@ class AccountSettings: UIViewController {
         
         let username = FIRAuth.auth()?.currentUser?.email
         usernameLabel.text = "Welcome, " + username!
+        
         
     }
     
@@ -51,5 +53,7 @@ class AccountSettings: UIViewController {
         profilePicture.layer.cornerRadius = self.profilePicture.frame.size.width / 2
         profilePicture.clipsToBounds = true
     }
+    
+    
     
 }

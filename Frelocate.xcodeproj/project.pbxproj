@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		42F3F89528ABE35BF3421FD1 /* Pods_Frelocate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6C857833EE46AC3C702BC6 /* Pods_Frelocate.framework */; };
+		591146CF2016835200D2A26C /* propertyAdvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591146CE2016835200D2A26C /* propertyAdvert.swift */; };
+		591146D3201CF2F400D2A26C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591146D2201CF2F400D2A26C /* StoreKit.framework */; };
 		5922AF751FFC38E400C23753 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922AF741FFC38E400C23753 /* DataService.swift */; };
 		5922AF771FFD63BF00C23753 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922AF761FFD63BF00C23753 /* Post.swift */; };
 		5924D7281FCF07A60086CBA1 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D7271FCF07A60086CBA1 /* SignUp.swift */; };
@@ -30,16 +32,18 @@
 		595148CE1FC9BC7900D050CB /* SavingsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595148CD1FC9BC7900D050CB /* SavingsCalculator.swift */; };
 		595148D01FCCA8AC00D050CB /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595148CF1FCCA8AC00D050CB /* RoundBtn.swift */; };
 		595148D61FCCAFA000D050CB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595148D51FCCAFA000D050CB /* Bolts.framework */; };
-		595148D81FCCAFA800D050CB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595148D71FCCAFA800D050CB /* FBSDKCoreKit.framework */; };
-		595148DA1FCCAFAF00D050CB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595148D91FCCAFAF00D050CB /* FBSDKLoginKit.framework */; };
 		598A02DE1FA7C63500BDEA6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A02DD1FA7C63500BDEA6E /* AppDelegate.swift */; };
 		598A02E31FA7C63500BDEA6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598A02E11FA7C63500BDEA6E /* Main.storyboard */; };
 		598A02E51FA7C63500BDEA6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598A02E41FA7C63500BDEA6E /* Assets.xcassets */; };
 		598A02E81FA7C63500BDEA6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598A02E61FA7C63500BDEA6E /* LaunchScreen.storyboard */; };
+		59902B95201CF49F004140E9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59902B94201CF49F004140E9 /* GoogleMobileAds.framework */; };
+		59FDE3BE201E61A2006A6650 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FDE3BD201E61A2006A6650 /* PurchaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29AF3BD11EFE92AB46294B45 /* Pods-Frelocate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frelocate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frelocate/Pods-Frelocate.debug.xcconfig"; sourceTree = "<group>"; };
+		591146CE2016835200D2A26C /* propertyAdvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = propertyAdvert.swift; path = "/Users/robprior/Desktop/XCODE PROJECTS/Frelocate/Frelocate/Controller/propertyAdvert.swift"; sourceTree = "<absolute>"; };
+		591146D2201CF2F400D2A26C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5922AF741FFC38E400C23753 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		5922AF761FFD63BF00C23753 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5924D7271FCF07A60086CBA1 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
@@ -64,14 +68,14 @@
 		595148CD1FC9BC7900D050CB /* SavingsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsCalculator.swift; sourceTree = "<group>"; };
 		595148CF1FCCA8AC00D050CB /* RoundBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		595148D51FCCAFA000D050CB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		595148D71FCCAFA800D050CB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		595148D91FCCAFAF00D050CB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		598A02DA1FA7C63500BDEA6E /* Frelocate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frelocate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		598A02DD1FA7C63500BDEA6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		598A02E21FA7C63500BDEA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		598A02E41FA7C63500BDEA6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		598A02E71FA7C63500BDEA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		598A02E91FA7C63500BDEA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59902B94201CF49F004140E9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../Downloads/GoogleMobileAdsSdkiOS-7.27.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		59FDE3BD201E61A2006A6650 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		802DF9CB6E2CC5C149F36522 /* Pods-Frelocate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frelocate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frelocate/Pods-Frelocate.release.xcconfig"; sourceTree = "<group>"; };
 		FD6C857833EE46AC3C702BC6 /* Pods_Frelocate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Frelocate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,9 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59902B95201CF49F004140E9 /* GoogleMobileAds.framework in Frameworks */,
 				42F3F89528ABE35BF3421FD1 /* Pods_Frelocate.framework in Frameworks */,
-				595148D81FCCAFA800D050CB /* FBSDKCoreKit.framework in Frameworks */,
-				595148DA1FCCAFAF00D050CB /* FBSDKLoginKit.framework in Frameworks */,
+				591146D3201CF2F400D2A26C /* StoreKit.framework in Frameworks */,
 				595148D61FCCAFA000D050CB /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +100,7 @@
 			children = (
 				5924D72C1FD404D90086CBA1 /* AuthService.swift */,
 				5922AF741FFC38E400C23753 /* DataService.swift */,
+				59FDE3BD201E61A2006A6650 /* PurchaseManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				5941042D1FC24BE500A49C79 /* BackTableVC.swift */,
 				595148CD1FC9BC7900D050CB /* SavingsCalculator.swift */,
 				5927CA751FEEE1BF00A20CF4 /* ForgottenPassword.swift */,
+				591146CE2016835200D2A26C /* propertyAdvert.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,8 +202,8 @@
 		D16295517B41B854394E7575 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				595148D91FCCAFAF00D050CB /* FBSDKLoginKit.framework */,
-				595148D71FCCAFA800D050CB /* FBSDKCoreKit.framework */,
+				59902B94201CF49F004140E9 /* GoogleMobileAds.framework */,
+				591146D2201CF2F400D2A26C /* StoreKit.framework */,
 				595148D51FCCAFA000D050CB /* Bolts.framework */,
 				FD6C857833EE46AC3C702BC6 /* Pods_Frelocate.framework */,
 			);
@@ -242,6 +248,9 @@
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 0;
 							};
@@ -346,6 +355,8 @@
 				5927CA7D1FEEF15A00A20CF4 /* KeychainWrapper.swift in Sources */,
 				594104361FC4EABD00A49C79 /* AccountSettings.swift in Sources */,
 				594104291FC2459600A49C79 /* SWRevealViewController.m in Sources */,
+				59FDE3BE201E61A2006A6650 /* PurchaseManager.swift in Sources */,
+				591146CF2016835200D2A26C /* propertyAdvert.swift in Sources */,
 				5922AF771FFD63BF00C23753 /* Post.swift in Sources */,
 				595148D01FCCA8AC00D050CB /* RoundBtn.swift in Sources */,
 				594104301FC3687F00A49C79 /* MySavedProperties.swift in Sources */,
@@ -494,14 +505,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TL22XCB27L;
+				DEVELOPMENT_TEAM = C9QAW9BCJ5;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frelocate",
 				);
 				INFOPLIST_FILE = Frelocate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RobPrior.Frelocate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frelocate.frelocate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Frelocate/Frelocate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -518,14 +531,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TL22XCB27L;
+				DEVELOPMENT_TEAM = C9QAW9BCJ5;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frelocate",
 				);
 				INFOPLIST_FILE = Frelocate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RobPrior.Frelocate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frelocate.frelocate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Frelocate/Frelocate-Bridging-Header.h";
 				SWIFT_REFLECTION_METADATA_LEVEL = all;
