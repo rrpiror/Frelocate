@@ -57,8 +57,8 @@ class SignIn: UIViewController, UITextFieldDelegate {
 //
 //    }
     
-    func firebaseAuth(_ credential: FIRAuthCredential) {
-        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+    func firebaseAuth(_ credential: AuthCredential) {
+        Auth.auth().signIn(with: credential, completion: { (user, error) in
             if error != nil {
                 print("ROB: Unable to authenticate with Firebase - \(String(describing: error))")
             } else {

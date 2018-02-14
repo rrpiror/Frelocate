@@ -22,7 +22,7 @@ class AccountSettings: UIViewController {
 
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
-        let username = FIRAuth.auth()?.currentUser?.email
+        let username = Auth.auth().currentUser?.email
         usernameLabel.text = "Welcome, " + username!
         
         
@@ -34,7 +34,7 @@ class AccountSettings: UIViewController {
         let yesAction = UIAlertAction(title: "Yes", style: .default, handler: {
             (action) -> Void in
             KeychainWrapper.standard.removeObject(forKey: KEY_UID)
-            try! FIRAuth.auth()?.signOut()
+            try! Auth.auth().signOut()
             self.performSegue(withIdentifier: "signOut", sender: nil)
         })
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {

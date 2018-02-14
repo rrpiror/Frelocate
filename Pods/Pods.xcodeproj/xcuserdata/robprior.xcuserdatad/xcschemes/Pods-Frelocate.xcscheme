@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D9403E81455C85BD39E4C3B0EA57432"
+               BlueprintIdentifier = "E8C6877C08A29C9626792232AD6D253D"
                BuildableName = "Pods_Frelocate.framework"
                BlueprintName = "Pods-Frelocate"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D9403E81455C85BD39E4C3B0EA57432"
+            BlueprintIdentifier = "E8C6877C08A29C9626792232AD6D253D"
             BuildableName = "Pods_Frelocate.framework"
             BlueprintName = "Pods-Frelocate"
             ReferencedContainer = "container:Pods.xcodeproj">

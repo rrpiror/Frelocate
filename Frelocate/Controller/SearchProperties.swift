@@ -24,7 +24,7 @@ class SearchProperties: UIViewController,UITableViewDelegate, UITableViewDataSou
         tableView.dataSource = self
         
         DataService.ds.REF_POSTS.observe(.value) { (snapshot) in
-            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 for snap in snapshot {
                     print("SNAP: \(snap)")
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {

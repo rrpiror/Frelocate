@@ -19,13 +19,13 @@ class AuthService {
     }
     
     func signUp(email: String, password: String, onComplete: @escaping Completion) {
-        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+        Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
             if error != nil {
                 self.handleFirebaseErrors(error: error! as NSError, onComplete: onComplete)
             } else {
                 if user?.uid != nil {
                     //sign in
-                    FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                    Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                         if error != nil {
                             self.handleFirebaseErrors(error: error! as NSError, onComplete: onComplete)
                         } else {
@@ -40,7 +40,7 @@ class AuthService {
     }
     
     func signIn(email: String, password: String, onComplete: @escaping Completion) {
-        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+        Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             if error != nil {
                 self.handleFirebaseErrors(error: error! as NSError, onComplete: onComplete)
             } else {
@@ -54,22 +54,23 @@ class AuthService {
     
     func handleFirebaseErrors(error:NSError, onComplete: @escaping Completion) {
         print(error.debugDescription)
-        if let errorCode = FIRAuthErrorCode(rawValue: error.code) {
+        if let errorCode = AuthErrorCode(rawValue: error.code) {
             switch (errorCode) {
-            case .errorCodeEmailAlreadyInUse:
+            
+            case .emailAlreadyInUse:
                 onComplete("There is already an account with that email address", nil)
                 break
-            case .errorCodeInvalidEmail:
+            case .invalidEmail:
                 onComplete("Invalid email address", nil)
                 break
-            case .errorCodeWrongPassword:
+            case .wrongPassword:
                 onComplete("Incorrect password", nil)
                 break
-            case .errorCodeAccountExistsWithDifferentCredential:
+            case .accountExistsWithDifferentCredential:
                 onComplete("Account credentials already exist", nil)
-            case .errorCodeWeakPassword:
+            case .weakPassword:
                 onComplete("Password used is too weak, please enter a different password", nil)
-            case .errorCodeUserDisabled:
+            case .userDisabled:
                 onComplete("User has been disabled, please contact Frelocate", nil)
             default:
                 onComplete("There was a problem signing up. Please try again later", nil)

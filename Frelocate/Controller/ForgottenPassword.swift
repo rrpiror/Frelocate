@@ -35,7 +35,7 @@ class ForgottenPassword: UIViewController, UITextFieldDelegate {
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             present(alert, animated: true, completion: nil)
         } else {
-            FIRAuth.auth()?.sendPasswordReset(withEmail: emailField.text!, completion: { (error) in
+            Auth.auth().sendPasswordReset(withEmail: emailField.text!, completion: { (error) in
                 if error != nil {
                     let alert = UIAlertController(title: "Error submitting", message: "Please try again later", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
