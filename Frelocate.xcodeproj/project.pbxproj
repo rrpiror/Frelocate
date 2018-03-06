@@ -15,6 +15,7 @@
 		5924D7281FCF07A60086CBA1 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D7271FCF07A60086CBA1 /* SignUp.swift */; };
 		5924D72D1FD404D90086CBA1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D72C1FD404D90086CBA1 /* AuthService.swift */; };
 		5924D7341FD5F7C60086CBA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924D7331FD5F7C60086CBA1 /* Constants.swift */; };
+		59266C55204AFFD70095A095 /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59266C54204AFFD70095A095 /* RoundImage.swift */; };
 		5927CA761FEEE1BF00A20CF4 /* ForgottenPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5927CA751FEEE1BF00A20CF4 /* ForgottenPassword.swift */; };
 		5927CA781FEEE50900A20CF4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5927CA771FEEE50900A20CF4 /* ShadowView.swift */; };
 		5927CA7A1FEEEA5300A20CF4 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5927CA791FEEEA5300A20CF4 /* PostCell.swift */; };
@@ -50,6 +51,7 @@
 		5924D7271FCF07A60086CBA1 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		5924D72C1FD404D90086CBA1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5924D7331FD5F7C60086CBA1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		59266C54204AFFD70095A095 /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
 		5927CA751FEEE1BF00A20CF4 /* ForgottenPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPassword.swift; sourceTree = "<group>"; };
 		5927CA771FEEE50900A20CF4 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		5927CA791FEEEA5300A20CF4 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				5927CA771FEEE50900A20CF4 /* ShadowView.swift */,
 				5927CA791FEEEA5300A20CF4 /* PostCell.swift */,
 				59FDE3BF202A6560006A6650 /* SearchTextField.swift */,
+				59266C54204AFFD70095A095 /* RoundImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				5924D7281FCF07A60086CBA1 /* SignUp.swift in Sources */,
 				598A02DE1FA7C63500BDEA6E /* AppDelegate.swift in Sources */,
 				5927CA7D1FEEF15A00A20CF4 /* KeychainWrapper.swift in Sources */,
+				59266C55204AFFD70095A095 /* RoundImage.swift in Sources */,
 				594104361FC4EABD00A49C79 /* AccountSettings.swift in Sources */,
 				594104291FC2459600A49C79 /* SWRevealViewController.m in Sources */,
 				59FDE3BE201E61A2006A6650 /* PurchaseManager.swift in Sources */,

@@ -16,6 +16,7 @@ class SellMyProperty: UIViewController, UITextFieldDelegate, UITextViewDelegate,
     
     var imageSelected = false
     
+    @IBOutlet var getStartedLabel: UILabel!
     @IBOutlet var titleTextField: SearchTextField!
     @IBOutlet var valueTextFiled: UITextField!
     @IBOutlet var locationTextField: SearchTextField!
@@ -79,6 +80,7 @@ class SellMyProperty: UIViewController, UITextFieldDelegate, UITextViewDelegate,
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             mainImage.image = image
+            getStartedLabel.isHidden = true
             imageSelected = true
         }else {
             createAlert(title: "Valid image not selected", message: "Please select a valid image")

@@ -10,6 +10,7 @@ import Firebase
 
 class SignUp: UIViewController, UITextFieldDelegate {
 
+    //outlets
     @IBOutlet var emailField: UITextField!
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var numbersLabel: UILabel!
@@ -26,6 +27,32 @@ class SignUp: UIViewController, UITextFieldDelegate {
         
         }
     
+    //actions
+    
+    @IBAction func signUpButtonPressed(_ sender: Any) {
+        if let email = emailField.text, let pass = passwordField.text, (email.count > 0 && pass.count > 0) {
+            if numbersLabel.text == numbersTextField.text {
+                
+                AuthService.instance.signUp(email: email, password: pass, onComplete: { (errMsg, data) in
+                    guard errMsg == nil else {
+                        self.createAlert(title: "Error signing up", message: errMsg!)
+                        return
+                    }
+                    self.performSegue(withIdentifier: "signUpComplete", sender: nil)
+                    //self.dismiss(animated: true, completion: nil)
+                })
+                
+            } else {
+                createAlert(title: "Invalid Verification", message: "Please enter the correct verification numbers to confirm you are not a robot")
+                randomNumber()
+            }
+        } else {
+            createAlert(title: "Email and password required", message: "Please enter both a username and password")
+        }
+    }
+    
+    //functions 
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -37,27 +64,7 @@ class SignUp: UIViewController, UITextFieldDelegate {
         return (true)
     }
 
-    @IBAction func signUpButtonPressed(_ sender: Any) {
-        if let email = emailField.text, let pass = passwordField.text, (email.count > 0 && pass.count > 0) {
-            if numbersLabel.text == numbersTextField.text {
-            
-            AuthService.instance.signUp(email: email, password: pass, onComplete: { (errMsg, data) in
-                guard errMsg == nil else {
-                    self.createAlert(title: "Error signing up", message: errMsg!)
-                    return
-                }
-                self.performSegue(withIdentifier: "signUpComplete", sender: nil)
-                //self.dismiss(animated: true, completion: nil)
-            })
-                
-            } else {
-                createAlert(title: "Invalid Verification", message: "Please enter the correct verification numbers to confirm you are not a robot")
-                randomNumber()
-                }
-            } else {
-            createAlert(title: "Email and password required", message: "Please enter both a username and password")
-            }
-        }
+    
     
     func randomNumber() {
         let randomNumber = arc4random_uniform(1001) + 1000
